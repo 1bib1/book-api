@@ -38,6 +38,12 @@ php artisan serve --port 8000
 Application supports two fields: Name (required) and author (can be left blank).<br/>
 You can list all books, list one book, add, update and delete book
 
+API returns json of books when listing.
+
+ADD/UPDATE/DELETE response:
+> 1 if success
+> 0 if fail
+
 <h2>Example of use in local env.</h2>
 
 List all books (GET METHOD):
