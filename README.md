@@ -1,5 +1,5 @@
-<p> Simple API to store name and author of books.
-<br/> You can Create/update/list/delete books. 
+<p> Simple API to store name and author of a book.
+<br/> You can Create/update/list/delete books using an API. 
 </p>
 <p>
     Requirements:
