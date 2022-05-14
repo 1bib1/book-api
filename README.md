@@ -13,6 +13,7 @@
 Create dependencies using composer
 ```
 cd path/to/repository
+composer update
 composer dumpautoload
 ```
 Rename .env.example to .env and edit database configuration (example):
