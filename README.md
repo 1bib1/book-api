@@ -1,10 +1,11 @@
-<p> Api </p>
-
+<p> Simple API to store name and author of books.
+<br/> You can Create/store/list/delete books. 
+</p>
 <p>
-    Requrements:
+    Requirements:
     <ul>
     <li>Php 8+ </li>
-    <li> Composer</li>
+    <li>Composer</li>
     </ul>
 </p>
 <h2>Deployment:</h2>
@@ -14,7 +15,7 @@ Create dependencies using composer
 cd path/to/repository
 composer dumpautoload
 ```
-Rename .env.example to .env and insert database configuration
+Rename .env.example to .env and edit database configuration (example):
 ```
 DB_CONNECTION=mysql
 DB_HOST=localhost   
@@ -24,3 +25,31 @@ DB_USERNAME=root
 DB_PASSWORD=secret
 ```
 
+Run database migrations:
+```
+php artisan migrate
+```
+
+Start webserver server (you can select port you like):
+```
+php artisan serve --port 8000
+```
+<h2>How does it work?</h2>
+Application supports two fields: Name and author<br/>
+You can list all books, list one book, add, update and delete book
+
+<h2>Example of use with </h2>
+List all books (GET METHOD):
+> 127.0.0.1:8000/api/books
+
+List one book (GET METHOD):
+> 127.0.0.1:8000/api/books/id
+
+Add book (POST METHOD):
+> 127.0.0.1:8000/api/books/id?name=Something?author=Daft
+
+Update book (PUT METHOD):
+> 127.0.0.1:8000/api/books/id?name=SomethingElse?author=Code
+
+Delete book (DELETE METHOD):
+> 127.0.0.1:8000/api/books/id 
