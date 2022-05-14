@@ -35,10 +35,11 @@ Start webserver server (you can select port you like):
 php artisan serve --port 8000
 ```
 <h2>How does it work?</h2>
-Application supports two fields: Name and author<br/>
+Application supports two fields: Name (required) and author (can be left blank).<br/>
 You can list all books, list one book, add, update and delete book
 
 <h2>Example of use with </h2>
+
 List all books (GET METHOD):
 > 127.0.0.1:8000/api/books
 
