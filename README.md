@@ -9,8 +9,6 @@
     </ul>
 </p>
 <h2>Deployment:</h2>
-
-<<<<<<< HEAD
 Create Laravel dependencies using composer
 ```
 cd path/to/repository
