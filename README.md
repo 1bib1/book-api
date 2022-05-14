@@ -42,6 +42,7 @@ API returns json of books when listing.
 
 ADD/UPDATE/DELETE response:
 > 1 if success
+
 > 0 if fail
 
 <h2>Example of use in local env.</h2>
