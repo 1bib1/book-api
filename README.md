@@ -9,12 +9,14 @@
     </ul>
 </p>
 <h2>Deployment</h2>
+
 Create dependencies using composer
 ```
 cd path/to/repository
 composer update
 composer dumpautoload
 ```
+
 Rename .env.example to .env and edit database configuration (example):
 ```
 DB_CONNECTION=mysql
